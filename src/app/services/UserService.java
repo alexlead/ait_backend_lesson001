@@ -21,7 +21,7 @@ public class UserService {
         }
 
 //        TODO check if email Exists in BD
-        if (repository.findByEmail(email).getId() != 0 ) {
+        if (repository.findByEmail(email) != null ) {
             throw  new IllegalArgumentException("User exists");
         }
 

@@ -49,6 +49,6 @@ public class UserRepositoryMap implements UserRepository{
             }
         }
         
-        return new User(0, "", "");
+        return null;
     }
 }
